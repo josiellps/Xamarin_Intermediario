@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MonkeyHub.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,6 +13,8 @@ namespace MonkeyHub
         public MainPage()
         {
             InitializeComponent();
+            var monkey = new MainViewModel();
+            BindingContext = monkey;
         }
     }
 }
